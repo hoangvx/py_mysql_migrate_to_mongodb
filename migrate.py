@@ -26,8 +26,6 @@ mongo_conn = MongoClient(config["mongodb"]["host"], 27017)
 
 db = eval("mongo_conn.%s" % (config["mongodb"]["database"]))
 
-
-  
 for table, props in tr.iteritems():
   if "embed" not in props or props["embed"] == False:
     query = "SELECT {} FROM {}".format(", ".join(props["columns"]), table)
@@ -57,7 +55,6 @@ for table, props in tr.iteritems():
         }}
       )""".format(fr, table, key)
       eval(s)
-      
 
 
 cursor.close()

@@ -8,7 +8,9 @@ prefectures:
     center_longitude:
 
 regions:
-  
+  embed:
+    from: prefectures
+    key: prefecture_cd
   columns:
     license_plate_chimei_cd: 
     license_plate_chimei: 
