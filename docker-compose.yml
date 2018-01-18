@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=abc1234
+    volumes:
+       - ./data/mysql:/var/lib/mysql
+    ports:
+      - 3306:3306
+  mongodb:
+    image: mongo
+    environment:
+      - MONGODB_USER=root
+      - MONGODB_PASS=abc1234
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data/mongodb:/data/db
+    command: mongod --smallfiles --logpath=/dev/null
+

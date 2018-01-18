@@ -1,0 +1,9 @@
+mysql:
+  host: 127.0.0.1
+  username: root
+  password: abc1234
+  database: protos
+
+mongodb:
+  host: 127.0.0.1
+  database: protos

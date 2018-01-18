@@ -1,0 +1,16 @@
+prefectures:
+  columns:
+    name: 
+    prefecture_cd: 
+    latitude: 
+    longitude: 
+    center_latitude: 
+    center_longitude:
+
+regions:
+  
+  columns:
+    license_plate_chimei_cd: 
+    license_plate_chimei: 
+    prefecture_cd: 
+    is_valid: 
